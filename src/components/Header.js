@@ -7,13 +7,13 @@ function Header() {
     // Define the navigation items in both languages
     const navItems = {
         en: {
-            about: "About Me",
+            about: "About",
             skills: "Skills",
             projects: "Projects",
             contact: "Contact"
         },
         pt: {
-            about: "Sobre Mim",
+            about: "Sobre",
             skills: "Habilidades",
             projects: "Projetos",
             contact: "Contato"
@@ -37,7 +37,7 @@ function Header() {
                 </ul>
             </nav>
             <button onClick={toggleLanguage} className="language-toggle">
-                {language === 'en' ? 'Switch to Portuguese' : 'Switch to English'}
+                {language === 'en' ? 'Pt-Br' : 'En'}
             </button>
         </header>
     );

@@ -1,5 +1,5 @@
 {
-  "name": "my-website",
+  "name": "PietroTy",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -12,7 +12,7 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://PietroTy.github.io/my-portfolio",
+  "homepage": "https://PietroTy.github.io/PietroTy",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
