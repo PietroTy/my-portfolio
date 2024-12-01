@@ -8,7 +8,7 @@ const Contact = () => {
     en: {
       title: "Contact Me",
       description:
-        "If you'd like to get in touch with me, feel free to reach out through any of the following channels:",
+        "Feel free to reach out through any of the following channels:",
       email: "Email",
       linkedin: "LinkedIn",
       github: "GitHub",
@@ -18,7 +18,7 @@ const Contact = () => {
     pt: {
       title: "Entre em Contato",
       description:
-        "Se você gostaria de entrar em contato comigo, fique à vontade para me alcançar por meio de qualquer um dos seguintes canais:",
+        "Fique à vontade para me alcançar por meio de qualquer um dos seguintes canais:",
       email: "Email",
       linkedin: "LinkedIn",
       github: "GitHub",

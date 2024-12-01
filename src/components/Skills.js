@@ -9,22 +9,24 @@ const Skills = () => {
     en: {
       title: "Skills",
       description:
-        "Here are some of the technologies and languages I’ve worked with, along with my proficiency levels.",
+        "Here are some of the technologies and languages I’ve worked with, along with my progress level.",
     },
     pt: {
       title: "Habilidades",
       description:
-        "Aqui estão algumas das tecnologias e linguagens com as quais trabalhei, junto com meus níveis de proficiência.",
+        "Aqui estão algumas das tecnologias e linguagens com as quais trabalhei, junto com meus níveis de progresso.",
     },
   };
 
   const skills = [
-    { name: "HTML", percentage: 90 },
-    { name: "CSS", percentage: 85 },
+    { name: "Python", percentage: 90 },
+    { name: "C", percentage: 90 },
+    { name: "HTML", percentage: 85 },
     { name: "JavaScript", percentage: 80 },
     { name: "React", percentage: 75 },
-    { name: "Python", percentage: 70 },
-    { name: "SQL", percentage: 65 },
+    { name: "CSS", percentage: 65 },
+    { name: "SQL", percentage: 45 },
+    { name: "Java", percentage: 35 },
   ];
 
   return (

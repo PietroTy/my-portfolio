@@ -79,7 +79,6 @@ section {
     margin: 20px auto; /* Auto margin for centering */
     background-color: #1a1a1a; /* Slightly lighter dark background for sections */
     border-radius: 10px; /* Rounded corners */
-    max-width: 1200px; /* Optional: set a max-width */
   }
 
 /* About section */

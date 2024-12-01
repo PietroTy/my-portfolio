@@ -8,16 +8,16 @@ function About() {
     en: {
       title: "About Me",
       introduction:
-        "Hello! I’m Pietro, a passionate full-stack developer with a focus on Python, C, JavaScript, and web technologies.",
+        "Hi! I'm Pietro Turci, a Brazilian full-stack developer passionate about Python, C, JavaScript, and web technologies.",
       description:
-        "Currently pursuing a degree in Computer Science and aiming to create a positive impact using AI and technology.",
+        "Currently pursuing a degree in Computer Science, with the goal of making a positive impact through AI and technology.",
     },
     pt: {
       title: "Sobre Mim",
       introduction:
-        "Olá! Eu sou Pietro, um desenvolvedor full-stack apaixonado com foco em Python, C, JavaScript e tecnologias web.",
+        "Oi! Sou Pietro Turci, um desenvolvedor full-stack brasileiro apaixonado por Python, C, JavaScript e tecnologias web.",
       description:
-        "Atualmente cursando Ciências da Computação e com o objetivo de criar um impacto positivo usando IA e tecnologia.",
+        "Atualmente, estou cursando Ciências da Computação, com o objetivo de causar um impacto positivo por meio de IA e tecnologia.",
     },
   };
 

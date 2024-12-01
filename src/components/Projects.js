@@ -9,16 +9,12 @@ function Projects() {
             title: "Projects",
             projects: [
                 {
-                    name: "Checkers Game",
-                    description: "A simple checkers game developed using C and Raylib."
+                    name: "Chub",
+                    description: "A Hub for simple minigames developed entirely using C and Raylib."
                 },
                 {
-                    name: "Tectris",
-                    description: "A Tetris clone made in C with Raylib for game development practice."
-                },
-                {
-                    name: "My Hub of Games",
-                    description: "A hub for multiple mini-games made in C, ready to be adapted for the web."
+                    name: "Portfolio",
+                    description: "This site that you are in!"
                 }
             ]
         },
@@ -26,16 +22,12 @@ function Projects() {
             title: "Projetos",
             projects: [
                 {
-                    name: "Jogo de Damas",
-                    description: "Um jogo de damas simples desenvolvido em C e Raylib."
+                    name: "Chub",
+                    description: "Um Hub para minijogos simples desenvolvido inteiramente em C e Raylib."
                 },
                 {
-                    name: "Tectris",
-                    description: "Um clone do Tetris feito em C com Raylib para prática de desenvolvimento de jogos."
-                },
-                {
-                    name: "Meu Hub de Jogos",
-                    description: "Um hub para vários mini-jogos feito em C, pronto para ser adaptado para a web."
+                    name: "Portfolio",
+                    description: "Esse site que você está!"
                 }
             ]
         }
