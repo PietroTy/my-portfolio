@@ -18,7 +18,7 @@ const Contact = () => {
     pt: {
       title: "Entre em Contato",
       description:
-        "Fique à vontade para me alcançar por meio de qualquer um dos seguintes canais:",
+        "Fique à vontade para me contatar por meio de qualquer um dos seguintes canais:",
       email: "Email",
       linkedin: "LinkedIn",
       github: "GitHub",
