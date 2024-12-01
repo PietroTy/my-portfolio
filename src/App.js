@@ -4,19 +4,22 @@ import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
+import { LanguageProvider } from './LanguageContext';
 import './styles.css';
 
 function App() {
     return (
-        <div>
-            <Header />
-            <main>
-                <About />
-                <Skills />
-                <Projects />
-                <Contact />
-            </main>
-        </div>
+        <LanguageProvider>
+            <div>
+                <Header />
+                <main>
+                    <About />
+                    <Skills />
+                    <Projects />
+                    <Contact />
+                </main>
+            </div>
+        </LanguageProvider>
     );
 }
 

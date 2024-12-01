@@ -1,6 +1,6 @@
 /* General styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Monocraft, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #121212;  /* Dark background */
@@ -9,104 +9,183 @@ body {
 
 /* Header styles */
 header {
-    background-color: #121212;  /* Dark background */
-    color: #E0E0E0;  /* Light text */
-    padding: 15px 0;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #121212;
+    padding: 15px 30px;
+    color: #E0E0E0;
 }
 
+/* Left section for logo */
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.pietro {
+    color: white;
+}
+
+.ty {
+    color: #6A4C9C;  /* Violet color for "Ty" */
+}
+
+/* Navigation styles */
 nav ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    margin: 0;
 }
 
 nav ul li {
-    display: inline;
     margin: 0 20px;
 }
 
 nav ul li a {
-    color: #6A4C9C;  /* Violet link */
+    color: #6A4C9C;
     text-decoration: none;
     font-weight: bold;
 }
 
 nav ul li a:hover {
-    color: #8A4D96;  /* Lighter violet on hover */
+    color: #9A6AAB;
 }
+
+/* Language toggle button */
+.language-toggle {
+    background-color: #6A4C9C;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.language-toggle:hover {
+    background-color: #9A6AAB;
+}
+
 
 /* Section styles */
 section {
     padding: 50px 20px;
-    margin: 20px 0;
-    background-color: #1A1A1A;  /* Slightly lighter dark background for sections */
-    border-radius: 10px;  /* Rounded corners for sections */
-}
+    margin: 20px auto; /* Auto margin for centering */
+    background-color: #1a1a1a; /* Slightly lighter dark background for sections */
+    border-radius: 10px; /* Rounded corners */
+    max-width: 1200px; /* Optional: set a max-width */
+  }
 
-/* Section styles */
+/* About section */
 section#about {
-    display: flex;  /* Use flexbox for layout */
-    justify-content: space-between;  /* Space between text and image */
-    align-items: center;  /* Vertically center the content */
-    padding: 50px 20px;
-    margin: 20px 0;
-    background-color: #1A1A1A;  /* Slightly lighter dark background for the section */
-    border-radius: 10px;  /* Rounded corners for sections */
+    justify-content: space-between;
+    align-items: center;
     border-left: 5px solid #6A4C9C;  /* Violet left border */
 }
 
 .about-content {
-    display: flex;  /* Flex container for text and image */
+    display: flex;
     width: 100%;
-    justify-content: space-between;  /* Space between the text and image */
+    justify-content: space-between;
     align-items: center;
 }
 
 .about-text {
-    width: 60%;  /* Take up 60% of the space */
+    width: 60%;
 }
 
 .about-text h2 {
-    color: #E0E0E0;  /* Light text for the heading */
+    color: #E0E0E0;
+    border-bottom: 2px solid #6A4C9C; /* Unified violet underlining */
+    padding-bottom: 10px;
 }
 
 .about-text p {
-    color: #E0E0E0;  /* Light gray text for paragraphs */
+    color: #E0E0E0;
 }
 
 .about-image {
-    width: 35%;  /* The image will take up 35% of the section */
-    text-align: center;  /* Center the image */
+    position: relative; /* Enable positioning of child elements */
+    width: 25%;
+    text-align: center;
 }
 
-.about-image img {
-    max-width: 100%;  /* Make sure the image is responsive */
-    height: auto;  /* Maintain the aspect ratio of the image */
-    border-radius: 10px;  /* Optional: rounded corners for the image */
+.about-image .main-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
+
+.about-image .overlay-image {
+    position: absolute;
+    width: 25%; /* Make the smaller image much smaller */
+    bottom: 10px; /* Adjust distance from the bottom */
+    left: 10px; /* Adjust distance from the left */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
 
 /* Skills section styling */
 section#skills {
-    border-left: 5px solid #6A4C9C;  /* Violet left border for Skills section */
+    justify-content: space-between;
+    align-items: center;
+    border-left: 5px solid #6A4C9C;  /* Violet left border */
+}
+
+/* Progress bar styling */
+/* Progress bar container */
+.progress {
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #333; /* Dark background for the container */
+}
+
+/* Progress bar itself */
+.progress-bar {
+    font-weight: bold;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: width 0.5s ease-in-out;
+    background-color: #6A4C9C !important; /* Use !important to override Bootstrap styles */
+}
+
+
+.skills-section h2 {
+    color: #E0E0E0;
+    border-bottom: 2px solid #6A4C9C; /* Unified violet underlining */
+    padding-bottom: 10px;
 }
 
 section#skills ul {
     list-style: none;
-    padding: 0;
 }
 
 section#skills ul li {
-    margin: 5px 0;
     color: #E0E0E0;
 }
 
 /* Projects section */
 section#projects {
-    border-left: 5px solid #6A4C9C;  /* Violet left border for Projects section */
+    border-left: 5px solid #6A4C9C;
+}
+
+.projects-section h2 {
+    color: #E0E0E0;
+    border-bottom: 2px solid #6A4C9C; /* Unified violet underlining */
+    padding-bottom: 10px;
 }
 
 section#projects h3 {
-    color: #6A4C9C;  /* Violet for project titles */
+    color: #6A4C9C; /* Unified violet for project titles */
 }
 
 section#projects li {
@@ -115,15 +194,17 @@ section#projects li {
 
 /* Contact section styles */
 section#contact {
-    border-left: 5px solid #6A4C9C;  /* Violet left border */
+    border-left: 5px solid #6A4C9C;
     padding: 50px 20px;
-    margin: 20px 0;
+    margin: 20px auto;  /* Consistent margin for spacing */
     background-color: #1A1A1A;
     border-radius: 10px;
 }
 
 .contact-content h2 {
     color: #E0E0E0;
+    border-bottom: 2px solid #6A4C9C; /* Unified violet underlining */
+    padding-bottom: 10px;
 }
 
 .contact-content p {
@@ -142,20 +223,19 @@ ul li {
 }
 
 ul li a {
-    color: #6A4C9C;  /* Violet link color */
+    color: #6A4C9C;
     text-decoration: none;
     font-size: 18px;
     transition: color 0.3s ease;
 }
 
-/* Hover effect for links */
 ul li a:hover {
-    color: #9A6AAB;  /* Lighter violet on hover */
+    color: #9A6AAB; /* Slightly lighter violet on hover */
 }
 
-/* Buttons styling (example, you can add buttons in your sections later) */
+/* Buttons styling */
 button {
-    background-color: #6A4C9C;  /* Violet button */
+    background-color: #6A4C9C;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -164,5 +244,5 @@ button {
 }
 
 button:hover {
-    background-color: #8A4D96;  /* Lighter violet on hover */
+    background-color: #9A6AAB; /* Slightly lighter violet on hover */
 }
