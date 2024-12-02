@@ -8,6 +8,9 @@
 /* General styles */
 body {
     font-family: 'Monocraft', sans-serif;
+    src: url('./assets/Monocraft.ttc') format('ttc');
+    font-weight: normal;
+    font-style: normal;
     margin: 0;
     padding: 0;
     background-color: #121212;  /* Dark background */
