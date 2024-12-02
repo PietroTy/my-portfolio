@@ -1,11 +1,10 @@
 @font-face {
     font-family: 'Monocraft';
-    src: url('./assets/Monocraft.ttc') format('truetype-collection');
+    src: url('./assets/Monocraft.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
-/* General styles */
 body {
     font-family: 'Monocraft', sans-serif;
     margin: 0;
