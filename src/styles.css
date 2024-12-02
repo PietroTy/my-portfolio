@@ -126,20 +126,44 @@ section#about {
     text-align: center;
 }
 
-.about-image .main-image {
+.about-image .pietro-image {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
 }
 
-.about-image .overlay-image {
+.about-image .jack-image {
     position: absolute;
     width: 25%; /* Make the smaller image much smaller */
     bottom: 10px; /* Adjust distance from the bottom */
     left: 10px; /* Adjust distance from the left */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
 }
+
+/* Third image */
+.about-image .pietro2-image {
+    position: absolute;
+    width: 100%; /* Match size of main image */
+    height: auto;
+    bottom: 0; /* Align with the main image */
+    left: 0;
+    border-radius: 10px;
+    opacity: 0; /* Start hidden */
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
+}
+
+/* Hover effect to reveal the third image */
+.about-image:hover .pietro-image {
+    opacity: 0; /* Hide the main image */
+}
+
+.about-image:hover .pietro2-image {
+    opacity: 1; /* Show the third image on hover */
+}
+
 
 
 /* Skills section styling */

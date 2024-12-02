@@ -33,12 +33,17 @@ function About() {
           <img
             src={require("../assets/pietro-image.jpg")}
             alt="Pietro"
-            className="main-image"
+            className="pietro-image"
+          />
+          <img
+            src={require("../assets/pietro2-image.jpg")}
+            alt="Pietro"
+            className="pietro2-image"
           />
           <img
             src={require("../assets/jack-image.jpg")}
-            alt="Pietro's work"
-            className="overlay-image"
+            alt="Jack"
+            className="jack-image"
           />
         </div>
       </div>
